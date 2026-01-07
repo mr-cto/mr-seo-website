@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mr SEO Website
 
-## Getting Started
+Professional SEO agency website built with Next.js 15, featuring 6 enterprise portfolio case studies and 10 comprehensive SEO blog posts.
 
-First, run the development server:
+## 🚀 Features
+
+- **Next.js 15** with App Router, TypeScript, and Turbopack
+- **Responsive Design** with Tailwind CSS
+- **Animated UI** using Framer Motion
+- **MDX Content Management** for portfolio case studies and blog posts
+- **Form Handling** with React Hook Form + Zod validation
+- **Email Integration** via Resend API
+- **SEO Optimized** with next-seo, JSON-LD structured data, and automated sitemap generation
+- **Production Ready** with successful build and deployment configuration
+
+## 📦 Tech Stack
+
+- **Framework:** Next.js 15.1.1
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4.x
+- **Animations:** Framer Motion
+- **Content:** MDX with gray-matter
+- **Forms:** React Hook Form + Zod + @hookform/resolvers
+- **Email:** Resend
+- **Icons:** React Icons
+- **SEO:** next-seo + next-sitemap
+
+## 📁 Project Structure
+
+```
+seo-business-site/
+├── app/                          # Next.js App Router
+│   ├── api/contact/             # Contact form API endpoint
+│   ├── blog/                    # Blog pages
+│   ├── portfolio/               # Portfolio pages
+│   ├── contact/                 # Contact page
+│   ├── services/                # Services page
+│   └── page.tsx                 # Homepage
+├── components/
+│   ├── forms/ContactForm.tsx    # Contact form
+│   ├── layout/                  # Header & Footer
+│   ├── sections/Hero.tsx        # Hero with animations
+│   └── ui/                      # Reusable UI components
+├── content/
+│   ├── portfolio/               # 6 MDX case studies
+│   └── blog/                    # 10 MDX blog posts
+└── lib/
+    ├── mdx.ts                   # MDX utilities
+    └── seo.ts                   # SEO schemas
+```
+
+## 🛠️ Installation
+
+```bash
+npm install
+cp .env.example .env.local
+# Add your RESEND_API_KEY to .env.local
+```
+
+## 🚀 Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Build & Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Deployment
 
-## Learn More
+### Vercel (Recommended)
 
-To learn more about Next.js, take a look at the following resources:
+1. Push to GitHub
+2. Connect to Vercel
+3. Add environment variables: `RESEND_API_KEY`, `SITE_URL`
+4. Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📧 Email Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Sign up for [Resend](https://resend.com) (free: 100 emails/day)
+2. Add API key to `.env.local`
+3. Update addresses in `/app/api/contact/route.ts`
 
-## Deploy on Vercel
+## 📝 Content Management
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding Blog Posts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create `.mdx` in `/content/blog/`:
+
+```mdx
+---
+title: "Post Title"
+date: "2026-01-06"
+description: "Description"
+author: "Author"
+category: "SEO"
+image: "/images/blog/post.jpg"
+readTime: "10 min read"
+---
+
+Content here...
+```
+
+### Adding Portfolio Items
+
+Create `.mdx` in `/content/portfolio/`:
+
+```mdx
+---
+title: "Project"
+client: "Client"
+industry: "Industry"
+services: ["Service 1", "Service 2"]
+date: "2026-01-01"
+description: "Description"
+metrics:
+  - label: "Traffic"
+    value: "+187%"
+---
+
+Details...
+```
+
+## 💰 Total Cost
+
+- **Domain:** $9/year (Cloudflare)
+- **Hosting:** $0 (Vercel free)
+- **Email:** $0 (Zoho + Resend free)
+- **Total:** $9/year
+
+---
+
+Built with Next.js 15

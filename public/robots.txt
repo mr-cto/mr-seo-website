@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://seo.mrcto.ai
+
+# Sitemaps
+Sitemap: https://seo.mrcto.ai/sitemap.xml
