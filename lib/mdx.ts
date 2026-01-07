@@ -7,8 +7,6 @@ import { marked } from "marked";
 marked.setOptions({
   breaks: false, // Don't convert single \n to <br>, only double \n\n creates new paragraphs
   gfm: true, // GitHub Flavored Markdown
-  headerIds: true, // Add IDs to headings
-  mangle: false, // Don't escape autolinked email addresses
 });
 
 const contentDirectory = path.join(process.cwd(), "content");
