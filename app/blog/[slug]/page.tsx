@@ -27,10 +27,14 @@ export async function generateMetadata({
   return {
     title: post.frontmatter.title,
     description: post.frontmatter.description,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
     openGraph: {
       type: "article",
       title: post.frontmatter.title,
       description: post.frontmatter.description,
+      url: `/blog/${slug}`,
       publishedTime: post.frontmatter.date,
       authors: [post.frontmatter.author],
       images: [

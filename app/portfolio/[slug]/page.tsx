@@ -24,6 +24,15 @@ export async function generateMetadata({
   return {
     title: `${item.frontmatter.client} Case Study | ${item.frontmatter.title}`,
     description: item.frontmatter.description,
+    alternates: {
+      canonical: `/portfolio/${slug}`,
+    },
+    openGraph: {
+      title: `${item.frontmatter.client} Case Study | ${item.frontmatter.title}`,
+      description: item.frontmatter.description,
+      url: `/portfolio/${slug}`,
+      type: "article",
+    },
   };
 }
 

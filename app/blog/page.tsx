@@ -6,6 +6,15 @@ export const metadata = {
   title: "SEO Blog | Expert Tips, Strategies & Industry Insights",
   description:
     "Stay ahead with expert SEO guides, strategies, and best practices. Learn from our team of SEO professionals who drive results for Fortune 500 brands.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "SEO Blog | Expert Tips, Strategies & Industry Insights",
+    description:
+      "Stay ahead with expert SEO guides, strategies, and best practices. Learn from our team of SEO professionals who drive results for Fortune 500 brands.",
+    url: "/blog",
+  },
 };
 
 export default async function BlogPage() {

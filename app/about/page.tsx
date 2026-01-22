@@ -4,6 +4,15 @@ export const metadata = {
   title: "About Us | Enterprise SEO Agency",
   description:
     "Learn about our team of SEO experts who have driven millions in organic revenue for Fortune 500 brands and high-growth startups.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Us | Enterprise SEO Agency",
+    description:
+      "Learn about our team of SEO experts who have driven millions in organic revenue for Fortune 500 brands and high-growth startups.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {

@@ -5,6 +5,15 @@ export const metadata = {
   title: "Portfolio | SEO Case Studies & Results",
   description:
     "View our enterprise SEO case studies. See how we have driven millions in revenue for Fortune 500 companies including Hyatt, Rocket Mortgage, and more.",
+  alternates: {
+    canonical: "/portfolio",
+  },
+  openGraph: {
+    title: "Portfolio | SEO Case Studies & Results",
+    description:
+      "View our enterprise SEO case studies. See how we have driven millions in revenue for Fortune 500 companies including Hyatt, Rocket Mortgage, and more.",
+    url: "/portfolio",
+  },
 };
 
 export default async function PortfolioPage() {
