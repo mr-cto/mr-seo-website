@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { organizationSchema } from "@/lib/seo";
 import "./globals.css";
 
@@ -23,6 +24,10 @@ export const metadata = {
     "organic growth",
   ],
   authors: [{ name: "Mr SEO" }],
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -33,7 +38,7 @@ export const metadata = {
       "Drive organic revenue with proven SEO strategies. Trusted by Fortune 500 brands.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "SEO Business - Enterprise SEO Agency",
@@ -44,7 +49,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Enterprise SEO Agency | Data-Driven Organic Growth",
     description: "Drive organic revenue with proven SEO strategies.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
     creator: "@seobusiness",
   },
   robots: {
@@ -72,6 +77,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body>
+        <GoogleAnalytics />
         <Header />
         <main>{children}</main>
         <Footer />

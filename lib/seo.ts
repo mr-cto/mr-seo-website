@@ -61,7 +61,7 @@ export const organizationSchema = {
   "@type": "Organization",
   name: "SEO Business",
   url: siteUrl,
-  logo: `${siteUrl}/logo.png`,
+  logo: `${siteUrl}/logo.svg`,
   description:
     "Enterprise SEO agency driving organic growth for Fortune 500 brands. Proven results in technical SEO, content strategy, and link building.",
   address: {
@@ -105,10 +105,10 @@ export function generateArticleSchema(article: {
       name: "Mr SEO",
       logo: {
         "@type": "ImageObject",
-        url: `${siteUrl}/logo.png`,
+        url: `${siteUrl}/logo.svg`,
       },
     },
-    image: article.image || `${siteUrl}/og-image.png`,
+    image: article.image || `${siteUrl}/og-image.svg`,
     url: article.url,
   };
 }

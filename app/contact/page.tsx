@@ -6,6 +6,15 @@ export const metadata = {
   title: "Contact Us | Get Your Free SEO Audit",
   description:
     "Ready to drive organic growth? Contact our team for a free SEO audit and strategy consultation. We typically respond within 24 hours.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Us | Get Your Free SEO Audit",
+    description:
+      "Ready to drive organic growth? Contact our team for a free SEO audit and strategy consultation. We typically respond within 24 hours.",
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {

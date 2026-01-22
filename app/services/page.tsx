@@ -5,6 +5,15 @@ export const metadata = {
   title: "SEO Services | Enterprise Technical SEO & Strategy",
   description:
     "Comprehensive SEO services including technical optimization, content strategy, link building, local SEO, e-commerce, and enterprise solutions.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "SEO Services | Enterprise Technical SEO & Strategy",
+    description:
+      "Comprehensive SEO services including technical optimization, content strategy, link building, local SEO, e-commerce, and enterprise solutions.",
+    url: "/services",
+  },
 };
 
 export default function ServicesPage() {

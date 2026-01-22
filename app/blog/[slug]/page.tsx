@@ -27,15 +27,19 @@ export async function generateMetadata({
   return {
     title: post.frontmatter.title,
     description: post.frontmatter.description,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
     openGraph: {
       type: "article",
       title: post.frontmatter.title,
       description: post.frontmatter.description,
+      url: `/blog/${slug}`,
       publishedTime: post.frontmatter.date,
       authors: [post.frontmatter.author],
       images: [
         {
-          url: `${siteUrl}/og-image.png`,
+          url: `${siteUrl}/og-image.svg`,
           width: 1200,
           height: 630,
         },
