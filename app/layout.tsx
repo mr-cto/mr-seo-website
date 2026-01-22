@@ -38,7 +38,7 @@ export const metadata = {
       "Drive organic revenue with proven SEO strategies. Trusted by Fortune 500 brands.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "SEO Business - Enterprise SEO Agency",
@@ -49,7 +49,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Enterprise SEO Agency | Data-Driven Organic Growth",
     description: "Drive organic revenue with proven SEO strategies.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
     creator: "@seobusiness",
   },
   robots: {

@@ -1,9 +1,0 @@
-<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon -->
-  <rect x="10" y="10" width="40" height="40" rx="8" fill="#2563EB"/>
-  <path d="M20 21C20 20.4477 20.4477 20 21 20H29C33.4183 20 37 23.5817 37 28C37 30.2091 36.0913 32.1829 34.6253 33.5H39C39.5523 33.5 40 33.9477 40 34.5C40 35.0523 39.5523 35.5 39 35.5H21C20.4477 35.5 20 35.0523 20 34.5V21Z" fill="white"/>
-  <path d="M29 31C31.7614 31 34 28.7614 34 26C34 23.2386 31.7614 21 29 21H24V31H29Z" fill="#2563EB"/>
-  
-  <!-- Text: Mr SEO -->
-  <text x="60" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937">Mr SEO</text>
-</svg>
