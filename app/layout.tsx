@@ -24,6 +24,10 @@ export const metadata = {
     "organic growth",
   ],
   authors: [{ name: "Mr SEO" }],
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
